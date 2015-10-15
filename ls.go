@@ -4,9 +4,10 @@ import (
 	"flag"
 	"fmt"
 	"os"
+	"path"
 )
 
-var prog_name string = os.Args[0]
+var prog_name string = path.Base(os.Args[0])
 var version string = "1.0"
 
 func main() {
